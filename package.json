@@ -28,7 +28,7 @@
   ],
   "bin": {
     "bitcore-node": "./bin/bitcore-node",
-    "bitcoind": "./bin/bitcoind"
+    "bitcoind": "./bin/GuldenD"
   },
   "scripts": {
     "test": "mocha -R spec --recursive",
