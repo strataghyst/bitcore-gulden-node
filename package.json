@@ -31,6 +31,8 @@
     "bitcoind": "./bin/GuldenD"
   },
   "scripts": {
+    "preinstall": "./scripts/download",
+    "verify": "./scripts/download --skip-bitcoin-download --verify-bitcoin-download",    
     "test": "mocha -R spec --recursive",
     "regtest": "./scripts/regtest",
     "jshint": "jshint --reporter=node_modules/jshint-stylish ./lib",
@@ -57,7 +59,8 @@
     "semver": "^5.0.1",
     "socket.io": "^1.4.5",
     "socket.io-client": "^1.4.5",
-    "zmq": "^2.14.0"
+    "zmq": "^2.14.0",
+    "scryptsy": "0.2.x"
   },
   "optionalDependencies": {
     "bufferutil": "~1.2.1",
