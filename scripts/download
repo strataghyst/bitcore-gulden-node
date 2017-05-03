@@ -18,7 +18,7 @@ if [ "${platform}" == "linux" ]; then
 elif [ "${platform}" == "darwin" ]; then
     tarball_name="gulden-${version}-osx64.tar.gz"
 else
-    echo "Bitcoin binary distribution not available for platform and architecture"
+    echo "Gulden binary distribution not available for platform and architecture"
     exit -1
 fi
 
@@ -29,7 +29,7 @@ download_bitcoind() {
 
     cd "${root_dir}/bin"
 
-    echo "Downloading bitcoin: ${binary_url}"
+    echo "Downloading Gulden: ${binary_url}"
 
     is_curl=true
     if hash curl 2>/dev/null; then
@@ -51,12 +51,12 @@ download_bitcoind() {
             echo "Unpacking Gulden distribution"
             tar -xvzf $tarball_name
             if test $? -eq 0; then
-                ln -sf "bitcoin-${version}/bin/GuldenD"
+                ln -sf "gulden-${version}/bin/GuldenD"
                 return;
             fi
         fi
     fi
-    echo "Bitcoin binary distribution could not be downloaded"
+    echo "Gulden binary distribution could not be downloaded"
     exit -1
 }
 

@@ -1,4 +1,4 @@
-Bitcore Node
+Bitcore Gulden Node
 ============
 
 A Bitcoin full node for building applications and services with Node.js. A node is extensible and can be configured to run additional services. At the minimum a node has an interface to [Bitcoin Core with additional indexing](https://github.com/bitpay/bitcoin/tree/0.12.1-bitcore) for more advanced address queries. Additional services can be enabled to make a node more useful such as exposing new APIs, running a block explorer and wallet service.
@@ -6,8 +6,8 @@ A Bitcoin full node for building applications and services with Node.js. A node 
 ## Install
 
 ```bash
-npm install -g bitcore-node
-bitcore-node start
+npm install -g bitcore-gulden-node
+bitcore-gulden-node start
 ```
 
 Note: For your convenience, we distribute bitcoind binaries for x86_64 Linux and x86_64 Mac OS X. Upon npm install, the binaries for your platform will be downloaded. For more detailed installation instructions, or if you want to compile the project yourself, then please see the Bitcore branch of [Bitcoin Core with additional indexing](https://github.com/bitpay/bitcoin/tree/0.12.1-bitcore).
@@ -25,10 +25,10 @@ Note: For your convenience, we distribute bitcoind binaries for x86_64 Linux and
 Bitcore includes a Command Line Interface (CLI) for managing, configuring and interfacing with your Bitcore Node.
 
 ```bash
-bitcore-node create -d <bitcoin-data-dir> mynode
+bitcore-gulden-node create -d <bitcoin-data-dir> mynode
 cd mynode
-bitcore-node install <service>
-bitcore-node install https://github.com/yourname/helloworld
+bitcore-gulden-node install <service>
+bitcore-gulden-node install https://github.com/yourname/helloworld
 ```
 
 This will create a directory with configuration files for your node and install the necessary dependencies. For more information about (and developing) services, please see the [Service Documentation](docs/services.md).
@@ -37,8 +37,8 @@ This will create a directory with configuration files for your node and install 
 
 There are several add-on services available to extend the functionality of Bitcore:
 
-- [Insight API](https://github.com/bitpay/insight-api)
-- [Insight UI](https://github.com/bitpay/insight-ui)
+- [Insight API](https://github.com/strataghyst/insight-api)
+- [Insight UI](https://github.com/strataghyst/insight-ui)
 - [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service)
 
 ## Documentation
@@ -58,8 +58,9 @@ Please send pull requests for bug fixes, code optimization, and ideas for improv
 
 ## License
 
-Code released under [the MIT license](https://github.com/bitpay/bitcore-node/blob/master/LICENSE).
+Code released under [the MIT license](https://github.com/strataghyst/bitcore-gulden-node/blob/master/LICENSE).
 
-Copyright 2013-2015 BitPay, Inc.
+Copyright (c) 2017 Strataghyst
 
 - bitcoin: Copyright (c) 2009-2015 Bitcoin Core Developers (MIT License)
+- bitcore: Copyright (c) 2013-2015 BitPay, Inc.

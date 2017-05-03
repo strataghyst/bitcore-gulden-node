@@ -1,13 +1,13 @@
 {
-  "name": "bitcore-node",
+  "name": "bitcore-gulden-node",
   "description": "Full node with extended capabilities using Bitcore and Bitcoin Core",
   "author": "BitPay <dev@bitpay.com>",
-  "version": "3.1.3",
+  "version": "3.1.4",
   "main": "./index.js",
-  "repository": "git://github.com/strataghyst/bitcore-node.git",
-  "homepage": "https://github.com/strataghyst/bitcore-node",
+  "repository": "git://github.com/strataghyst/bitcore-gulden-node.git",
+  "homepage": "https://github.com/strataghyst/bitcore-gulden-node",
   "bugs": {
-    "url": "https://github.com/strataghyst/bitcore-node/issues"
+    "url": "https://github.com/strataghyst/bitcore-gulden-node/issues"
   },
   "contributors": [
     {
@@ -27,7 +27,7 @@
     }
   ],
   "bin": {
-    "bitcore-node": "./bin/bitcore-node",
+    "bitcore-gulden-node": "./bin/bitcore-gulden-node",
     "bitcoind": "./bin/GuldenD"
   },
   "scripts": {
@@ -46,7 +46,7 @@
   "dependencies": {
     "async": "^1.3.0",
     "bitcoind-rpc": "^0.6.0",
-    "bitcore-lib": "^0.13.13",
+    "bitcore-gulden-lib": "^0.13.13",
     "body-parser": "^1.13.3",
     "colors": "^1.1.2",
     "commander": "^2.8.1",
